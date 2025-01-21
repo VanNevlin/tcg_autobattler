@@ -8,6 +8,7 @@ public class DeckController : MonoBehaviour
     public List<Card> discardPile = new List<Card>();
 
     public int maxDeckSize = 15;
+    public int testIfGithubUpdates = 100;
 
     private void Start()
     {
