@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Unity\\tcg_autobattler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|c:\\unity\\tcg_autobattler\\assets\\scripts\\deckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|c:\\unity\\tcg_autobattler\\assets\\scripts\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|c:\\unity\\tcg_autobattler\\assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|c:\\unity\\tcg_autobattler\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|C:\\Unity\\tcg_autobattler\\assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10FE4669-3701-80D6-E17B-1BF84C1A29BD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,25 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DeckController.cs",
-              "DocumentMoniker": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\DeckController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DeckController.cs",
-              "ToolTip": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\DeckController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DeckController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Title": "Unit.cs",
+              "DocumentMoniker": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\Unit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Unit.cs",
+              "ToolTip": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\Unit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Unit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T06:29:00.7Z",
+              "WhenOpened": "2025-01-21T15:48:19.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAowD8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T16:01:59.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\Card.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Card.cs",
               "ToolTip": "C:\\Unity\\tcg_autobattler\\Assets\\Scripts\\Card.cs",
               "RelativeToolTip": "Assets\\Scripts\\Card.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAYAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T06:28:41.114Z",
               "EditorCaption": ""

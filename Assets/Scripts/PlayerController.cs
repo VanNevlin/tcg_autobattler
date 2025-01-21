@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,6 +17,32 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI cardInfoText; // Reference to the Card Info UI Text
 
+    private List<Unit> unitsOnField = new List<Unit>();
+
+    public void AddUnitToField(Unit unit)
+    {
+        unitsOnField.Add(unit);
+    }
+
+    public bool HasUnitsOnField()
+    {
+        return unitsOnField.Count > 0; 
+    }
+
+    public Unit GetRandomUnit()
+    {
+        if(unitsOnField.Count == 0) return null;
+        else
+        {
+            int random = UnityEngine.Random.Range(0, unitsOnField.Count);
+            return unitsOnField[random];
+        }
+    }
+
+    public void RemoveDefeatedUnits()
+    {
+        unitsOnField.RemoveAll(unit => unit.IsDefeated());
+    }
 
     public void Setup()
     {
@@ -33,6 +60,21 @@ public class PlayerController : MonoBehaviour
             drawnCard.PlayCard(this, FindOpponent());
             deckController.DiscardCard(drawnCard);
         }
+
+        foreach (var unit in unitsOnField)
+        {
+            Debug.Log($"{unit.name} attacks the enemy for {unit.attack} damage.");
+            // Units attack logic
+            if (FindOpponent().HasUnitsOnField())
+            {
+                Unit targetUnit = FindOpponent().GetRandomUnit();
+                targetUnit.TakeDamage(unit.attack);
+            }
+            else FindOpponent().TakeDamage(unit.attack);
+
+            RemoveDefeatedUnits();
+        }
+        RemoveDefeatedUnits();
 
         onTurnComplete?.Invoke();
     }

@@ -7,19 +7,41 @@ public class Card : ScriptableObject
 {
     public string cardName;
     public string description;
+
     public int damage;  
-    public int heal;    
+    public int heal;
+
+    public bool isUnit;
+    public int attack;
+    public int health;
 
     public void PlayCard(PlayerController player, PlayerController enemy)
     {
-        // Logic for playing a card.
-        if (damage > 0)
+        if (isUnit)
         {
-            enemy.TakeDamage(damage);
+            Unit newUnit = new Unit(cardName, attack, health);
+            player.AddUnitToField(newUnit);
+            Debug.Log($"Summoned unit {cardName} with {attack} attack and {health} health.");
         }
-        if (heal > 0)
+        else
         {
-            player.Heal(heal);
+            if (damage > 0)
+            {
+                if (enemy.HasUnitsOnField())
+                {
+                    Unit targetUnit = enemy.GetRandomUnit();
+                    targetUnit.TakeDamage(damage);
+                    Debug.Log($"{cardName} dealt {damage} damage to enemy unit {targetUnit.name}.");
+                }
+                else
+                {
+                    enemy.TakeDamage(damage);
+                }
+            }
+            if (heal > 0)
+            {
+                player.Heal(heal);
+            }
         }
     }
 

@@ -1115,23 +1115,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deck:
-  - {fileID: 11400000, guid: 75d0428c99e348742948c70a4d5252f9, type: 2}
-  - {fileID: 11400000, guid: 868e524809489aa468c5dbb435a15b3e, type: 2}
+  - {fileID: 11400000, guid: 290cffd0f54133f4f8cd569623c8fedd, type: 2}
+  - {fileID: 11400000, guid: 290cffd0f54133f4f8cd569623c8fedd, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
   - {fileID: 11400000, guid: 919ffb6c84ef3e940ace183fa5646cf2, type: 2}
   - {fileID: 11400000, guid: 919ffb6c84ef3e940ace183fa5646cf2, type: 2}
   - {fileID: 11400000, guid: 919ffb6c84ef3e940ace183fa5646cf2, type: 2}
-  - {fileID: 11400000, guid: 0733bccf590200f45b37af05f63e14f8, type: 2}
-  - {fileID: 11400000, guid: 0733bccf590200f45b37af05f63e14f8, type: 2}
-  - {fileID: 11400000, guid: 0733bccf590200f45b37af05f63e14f8, type: 2}
   - {fileID: 11400000, guid: 80d851b61db69fc44b1fd2687ab326e1, type: 2}
   - {fileID: 11400000, guid: 80d851b61db69fc44b1fd2687ab326e1, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: 3f9b3b1ca0027024482a7c6bebf12430, type: 2}
   discardPile: []
-  maxDeckSize: 15
+  maxDeckSize: 12
+  testIfGithubUpdates: 100
 --- !u!1 &1206548113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,23 +1861,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deck:
+  - {fileID: 11400000, guid: 290cffd0f54133f4f8cd569623c8fedd, type: 2}
+  - {fileID: 11400000, guid: 290cffd0f54133f4f8cd569623c8fedd, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
+  - {fileID: 11400000, guid: 0c8a556e7c58f1c4e9e634a39d407dba, type: 2}
   - {fileID: 11400000, guid: 919ffb6c84ef3e940ace183fa5646cf2, type: 2}
   - {fileID: 11400000, guid: 919ffb6c84ef3e940ace183fa5646cf2, type: 2}
   - {fileID: 11400000, guid: 919ffb6c84ef3e940ace183fa5646cf2, type: 2}
-  - {fileID: 11400000, guid: 0733bccf590200f45b37af05f63e14f8, type: 2}
-  - {fileID: 11400000, guid: 0733bccf590200f45b37af05f63e14f8, type: 2}
-  - {fileID: 11400000, guid: 0733bccf590200f45b37af05f63e14f8, type: 2}
   - {fileID: 11400000, guid: 80d851b61db69fc44b1fd2687ab326e1, type: 2}
   - {fileID: 11400000, guid: 80d851b61db69fc44b1fd2687ab326e1, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: d2d538e63ce1ea14aa4478ba1a53a2fe, type: 2}
-  - {fileID: 11400000, guid: 3f9b3b1ca0027024482a7c6bebf12430, type: 2}
-  - {fileID: 11400000, guid: 75d0428c99e348742948c70a4d5252f9, type: 2}
-  - {fileID: 11400000, guid: 868e524809489aa468c5dbb435a15b3e, type: 2}
   discardPile: []
-  maxDeckSize: 15
+  maxDeckSize: 12
+  testIfGithubUpdates: 100
 --- !u!1 &1862885932
 GameObject:
   m_ObjectHideFlags: 0
