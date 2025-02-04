@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    public string name;
+    public string unitName;
     public int attack;
     public int health;
+    public GameObject unitVisual;
 
-    public Unit(string name, int attack, int health)
+    public Unit(string name, int attack, int health, GameObject visualPrefab, Transform spawnPosition)
     {
-        this.name = name;
+        this.unitName = name;
         this.attack = attack;
         this.health = health;
+        this.unitVisual = GameObject.Instantiate(visualPrefab, spawnPosition.position, Quaternion.identity);
     }
 
     public void TakeDamage(int damage)
@@ -21,6 +23,7 @@ public class Unit : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log($"{name} unit has been defeated!");
+            if (unitVisual) Destroy(unitVisual); // Remove the unit's visual when defeated
         }
     }
 

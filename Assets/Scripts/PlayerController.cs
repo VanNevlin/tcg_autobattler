@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI cardInfoText; // Reference to the Card Info UI Text
 
-    private List<Unit> unitsOnField = new List<Unit>();
+    public List<Unit> unitsOnField = new List<Unit>(); // Store active units
+    public Transform spawnPosition; // Assign a point where units will appear
 
     public void AddUnitToField(Unit unit)
     {
@@ -42,6 +43,13 @@ public class PlayerController : MonoBehaviour
     public void RemoveDefeatedUnits()
     {
         unitsOnField.RemoveAll(unit => unit.IsDefeated());
+    }
+
+    public void PlayUnitCard(Unit unitPrefab)
+    {
+        GameObject unitObject = Instantiate(unitPrefab.gameObject, spawnPosition.position, Quaternion.identity);
+        Unit newUnit = unitObject.GetComponent<Unit>();
+        unitsOnField.Add(newUnit);
     }
 
     public void Setup()
@@ -72,7 +80,7 @@ public class PlayerController : MonoBehaviour
             }
             else FindOpponent().TakeDamage(unit.attack);
 
-            RemoveDefeatedUnits();
+            //RemoveDefeatedUnits();
         }
         RemoveDefeatedUnits();
 

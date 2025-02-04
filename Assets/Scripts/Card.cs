@@ -15,13 +15,30 @@ public class Card : ScriptableObject
     public int attack;
     public int health;
 
+    public GameObject unitPrefab; // Prefab reference for unit visualization
+
     public void PlayCard(PlayerController player, PlayerController enemy)
     {
         if (isUnit)
         {
-            Unit newUnit = new Unit(cardName, attack, health);
-            player.AddUnitToField(newUnit);
-            Debug.Log($"Summoned unit {cardName} with {attack} attack and {health} health.");
+            if (unitPrefab != null)
+            {
+                // Instantiate the unit prefab at the player's spawn position
+                GameObject unitObject = GameObject.Instantiate(unitPrefab, player.spawnPosition.position, Quaternion.identity);
+                Unit newUnit = unitObject.GetComponent<Unit>();
+
+                // Set unit stats
+                newUnit.unitName = cardName;
+                newUnit.attack = attack;
+                newUnit.health = health;
+
+                player.AddUnitToField(newUnit);
+                Debug.Log($"Summoned unit {cardName} with {attack} attack and {health} health.");
+            }
+            else
+            {
+                Debug.LogError($"Unit card {cardName} is missing a prefab reference!");
+            }
         }
         else
         {

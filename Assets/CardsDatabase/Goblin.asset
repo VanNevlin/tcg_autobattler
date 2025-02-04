@@ -19,3 +19,4 @@ MonoBehaviour:
   isUnit: 1
   attack: 2
   health: 2
+  unitPrefab: {fileID: 7413959509593584042, guid: fb83d7a7e2a0524498de541d7cd2ca3f, type: 3}
